@@ -1,0 +1,25 @@
+
+{{>header}}
+{{>navbar}}
+
+
+<div class="container">
+    <div class="row mt-5">
+        <h2 class="text-center">Login Page</h2>
+        <hr>
+        <form method="post" action="/login">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required> 
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" required> 
+            </div>         
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <a href="/register" class="new-account mt-3">Create a new Account</a>
+    </div>
+</div>
+
+{{>footer}}
